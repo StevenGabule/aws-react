@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - cd aws-react && npm install
+  build:
+    commands:
+      - cd aws-react && npm run build
+  post_build:
+    commands:
+      - cd aws-react && aws s3 cp --recursive ./build s3://oncloud-aws-app/
