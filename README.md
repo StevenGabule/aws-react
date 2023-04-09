@@ -1,1 +1,1 @@
-# Learn AWS Static Site Deployment
+## Learning AWS Static Hosting
